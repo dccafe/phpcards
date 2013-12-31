@@ -1,5 +1,6 @@
 <?php
 
+
 session_start();
 
 // Setting default values
@@ -14,7 +15,6 @@ require_once('views/header.php');
 
 include 'models/Card.php';
 
-echo exec('./cpp/main');
 $cards[] = new Card('hi');
 $cards[] = new Card('salut');
 $cards[] = new Card('oi');
@@ -22,4 +22,7 @@ $cards[] = new Card('other','with content');
 
 foreach($cards as $card) echo $card;
 require_once('views/footer.php');
+
+echo exec('./cpp/main');
+
 ?>
