@@ -14,6 +14,7 @@ require_once('views/header.php');
 
 include 'models/Card.php';
 
+echo exec('./cpp/main');
 $cards[] = new Card('hi');
 $cards[] = new Card('salut');
 $cards[] = new Card('oi');
